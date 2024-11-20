@@ -1,0 +1,561 @@
+@media screen and (min-width:320px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-box {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    background-color: #fff;
+    transition: all .3s;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.nav-box .nav-left-box {
+    float: left;
+    width: 7rem;
+    height: 100%;
+    color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-family: 'FangYaHei';
+    letter-spacing: .1rem;
+    transition: all .3s;
+}
+
+.nav-box .nav-left-box .iconfont {
+    font-size: 1.2rem;
+}
+
+.nav-box .nav-right-box {
+    position: relative;
+    float: right;
+    width: 2rem;
+    height: 100%;
+    text-align: center;
+    line-height: 2rem;
+    color: #000;
+    transition: all .3s;
+}
+
+.nav-box .nav-right-box .style-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 2rem;
+    background-color: aqua;
+    transition: all .3s;
+}
+
+.nav-box .nav-right-box .iconfont {
+    font-size: 1.1rem;
+}
+
+.cover-box {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/img/coverPE.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+
+.cover-box::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.cover-box .container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    font-family: 'FangYaHei';
+    font-size: .7rem;
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    border: 1px solid #c2bfbf;
+}
+
+.cover-box .container .iconfont {
+    font-size: .7rem;
+    color: rgb(236, 236, 86);
+}
+
+.cover-box .title-box {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+.cover-box .title-box .change-box {
+    position: relative;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.cover-box .title-box .change-box .change-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cover-box .title-box .change-box .change-list .change-item {
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.cover-box .btn-box {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+}
+
+.cover-box .btn-box .more,
+.cover-box .btn-box .team {
+    display: block;
+    color: #fff;
+    width: 10rem;
+    margin: 2rem;
+    height: 2.5rem;
+    font-weight: lighter;
+    font-size: .8rem;
+    text-align: center;
+    line-height: 2.5rem;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 2.5rem;
+    border-bottom: .05rem solid #fff;
+}
+
+.cover-box .downup {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    animation: downup 1s linear infinite alternate;
+
+}
+
+.cover-box .downup i {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.cover-box .info-box {
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    text-align: center;
+    transform: translate(-50%);
+    width: 18rem;
+    font-weight: lighter;
+    color: #d3d0d0;
+}
+
+.menu-title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.menu-title .iconfont {
+    position: relative;
+    color: transparent;
+    background: -webkit-linear-gradient(90deg, #21cfff, #6d29ff, #0b66b5, #cf4dff);
+    background: linear-gradient(90deg, #21cfff, #6d29ff, #0b66b5, #cf4dff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.menu-title .iconfont::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 3rem;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.menu-title .menu-text {
+    margin-top: .8rem;
+}
+
+.banner {
+    position: relative;
+    margin: 2rem auto 0;
+    width: 22rem;
+    height: 11rem;
+    background: url("../assets/img/banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .2);
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
+}
+
+.banner .time-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: 'FangYaHei';
+    font-size: 1.1rem;
+}
+
+.banner .copywriting {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'LXG';
+    font-size: .7rem;
+}
+
+.banner .copyfrom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: .6rem;
+    background-color: #ffffff44;
+}
+
+.download-box {
+    position: relative;
+    width: 25rem;
+    height: 13rem;
+    margin: 2rem auto 0;
+    background: url("../assets/img/download.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .2);
+}
+
+.download-box::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+}
+
+.download-box .download-text {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    color: #d2cfcf;
+    font-weight: lighter;
+}
+
+.download-box .iconfont {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    transition: all .3s;
+}
+
+.download-box .download-btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    color: #fff;
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: lighter;
+    transform: translateX(-50%);
+}
+
+.download-box .download-title {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    font-family: 'LXG';
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.card-box {
+    position: relative;
+    margin: 2rem auto 0;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+    line-height: 9rem;
+}
+
+.card-box .card-info {
+    display: none;
+}
+
+.card-box a .iconfont {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-box .html-box {
+    float: left;
+    width: 9rem;
+    height: 9rem;
+    background-color: #555555;
+    color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+}
+
+.card-box .css-box {
+    float: left;
+    margin-left: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.card-box .js-box {
+    float: left;
+    margin-top: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background-color: #D3D3D3;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.card-box .ajax-box {
+    float: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 9rem;
+    height: 9rem;
+    background-color: #463838;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.design-box {
+    position: relative;
+    margin: 2rem auto 0;
+    width: 22rem;
+    height: 12rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.design-box .design-title {
+    display: none;
+}
+
+.design-box .img-box {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 8rem;
+    height: 8rem;
+    border-radius: .5rem;
+    background: url("../assets/img/design.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.design-box .design-text {
+    position: absolute;
+    padding: .5rem;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 12rem;
+    height: 10rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: #000;
+    /* background-color: aqua; */
+}
+
+.design-box .learn-btn {
+    display: block;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-weight: lighter;
+    font-size: .6rem;
+    text-transform: uppercase;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    letter-spacing: .1rem;
+}
+
+.footer-box {
+    margin-top: 3rem;
+    position: relative;
+    height: 18rem;
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+.footer-box .footer-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'FangYaHei';
+}
+
+.footer-box .footer-title {
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.footer-box .support-box {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 3rem;
+}
+
+.footer-box .support-box a {
+    float: left;
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.footer-box .support-box .github {
+    margin-left: 1rem;
+}
+
+.footer-box .support-box a .iconfont {
+    font-size: 2rem;
+}
+
+.item {
+    top: 2rem;
+    opacity: 0;
+}
+
+.appear {
+    animation: appear .4s linear forwards;
+}
+
+@keyframes downup {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translate(-50%, .6rem);
+    }
+}
+
+@keyframes appear {
+    0% {
+        top: 2rem;
+        opacity: 0;
+    }
+
+    50% {
+        top: 1rem;
+        opacity: .6;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}

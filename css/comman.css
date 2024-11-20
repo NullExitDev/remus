@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'FangYaHei';
+    src: url("../assets/fonts/AiDianFangYaHei.ttf");
+}
+
+@font-face {
+    font-family: 'LXG';
+    src: url("../assets/fonts/LXGWFasmartGothic.ttf");
+}
+
+@font-face {
+    font-family: 'Title';
+    src: url("../assets/fonts/TiejiliSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'CaoShu';
+    src: url('../assets/fonts/KeJiaTi.ttf');
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+em {
+    font-style: normal;
+    color: transparent;
+    background: -webkit-linear-gradient(90deg, #ff4013, #ff6a00, #7b219f);
+    background: linear-gradient(90deg, #ff4013, #ff6a00, #7b219f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+}

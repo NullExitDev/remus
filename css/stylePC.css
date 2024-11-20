@@ -1,0 +1,344 @@
+.nav-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color: #fff;
+    z-index: 99;
+    transition: all .3s;
+}
+
+.nav-box .nav-left-box {
+    float: left;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'FangYaHei';
+    letter-spacing: .1rem;
+}
+
+.nav-box .nav-left-box .iconfont {
+    font-size: 25px;
+}
+
+.nav-box .nav-right-box {
+    float: right;
+    width: 50px;
+    height: 100%;
+    line-height: 40px;
+}
+
+.nav-box .nav-right-box .iconfont {
+    font-size: 20px;
+}
+
+.cover-box {
+    position: relative;
+    width: 100%;
+    background: url('../assets/img/coverPC.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cover-box .container {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'FangYaHei';
+    text-align: center;
+    font-size: 15px;
+}
+
+.cover-box .title-box {
+    font-size: 50px;
+    width: 500px;
+}
+
+.cover-box .title-box .change-box {
+    height: 70px;
+}
+
+.cover-box .title-box .change-box .change-list .change-item {
+    height: 70px;
+    line-height: 70px;
+}
+
+.cover-box .btn-box {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+
+.cover-box .btn-box .more,
+.cover-box .btn-box .team {
+    float: left;
+    display: block;
+    color: #fff;
+    width: 200px;
+    margin: 10px;
+    height: 50px;
+    font-family: 'FangYaHei';
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    border-bottom: 1px solid #fff;
+    transition: all .3s;
+}
+
+.cover-box .btn-box .more:hover,
+.cover-box .btn-box .team:hover {
+    background-color: rgba(255, 255, 255, .4);
+    color: #000;
+}
+
+.cover-box .downup {
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    animation: downup 1s linear infinite alternate;
+
+}
+
+.cover-box .downup i {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.cover-box .info-box {
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    text-align: center;
+    transform: translate(-50%);
+    width: 450px;
+    font-weight: lighter;
+    color: #d3d0d0;
+}
+
+.banner {
+    position: relative;
+    width: 900px;
+    height: 490px;
+    background: url("../assets/img/bannerPC.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+}
+
+.banner .copywriting {
+    font-family: 'LXG';
+    font-size: 24px;
+}
+
+.banner .copyfrom {
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.card-box {
+    margin: 2rem auto 0;
+    width: 1100px;
+    height: 500px;
+    text-align: center;
+    line-height: 9rem;
+    /* background-color: aqua; */
+}
+
+.mask {
+    position: relative;
+}
+
+.mask::before {
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.card-box {
+    position: relative;
+}
+
+.card-box .card-info {
+    position: relative;
+    display: block;
+    margin-top: 150px;
+    padding: 25px;
+    color: #000;
+    height: 350px;
+    text-align: justify;
+    line-height: normal;
+    background-color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-box .card-info::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: -webkit-linear-gradient(90deg, #ff0000, #c60043, #ff8a8a);
+    background: linear-gradient(90deg, #ff0000, #c60043, #ff8a8a);
+}
+
+.card-box a .iconfont {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    z-index: 99;
+}
+
+.card-box .html-box {
+    float: left;
+    width: 252.5px;
+    height: 150px;
+    /* background-color: #555555; */
+    background: url("../assets/img/htmlPC.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+    border-radius: 0;
+}
+
+.card-box .css-box {
+    float: left;
+    margin-left: 30px;
+    width: 252.5px;
+    height: 150px;
+    background: url("../assets/img/cssPC.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.card-box .js-box {
+    float: left;
+    margin-left: 30px;
+    margin-top: 0;
+    width: 252.5px;
+    height: 150px;
+    background: url("../assets/img/jsPC.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.card-box .ajax-box {
+    float: left;
+    width: 252.5px;
+    height: 150px;
+    margin-top: 0;
+    margin-left: 30px;
+    background: url("../assets/img/ajaxPC.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.download-box {
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.download-box:hover .icon-wenjian {
+    opacity: 1;
+}
+
+.design-box {
+    position: relative;
+    margin: 2rem auto 3rem;
+    width: 800px;
+    height: 400px;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+}
+
+.design-box .img-box {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);
+    width: 240px;
+    height: 240px;
+    background: url("../assets/img/design.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .6);
+}
+
+.design-box .design-title {
+    display: block;
+    color: #000;
+    margin-top: 40px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    font-family: 'LXG';
+    letter-spacing: 5px;
+}
+
+.design-box .design-text {
+    position: absolute;
+    padding: 15px;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 200px;
+    font-weight: lighter;
+    font-size: 1rem;
+    /* background-color: aqua; */
+}
+
+.design-box .learn-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    letter-spacing: .1rem;
+}
+
+
+@keyframes downup {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translate(-50%, 7px);
+    }
+}
